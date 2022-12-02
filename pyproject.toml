@@ -1,0 +1,29 @@
+[project]
+name = "dataflow-ext"
+version = "0.1.0"
+authors = [
+  { name="kilfu0701", email="kilfu0701@gmail.com" },
+]
+description = "An Extension Library for Dataflow(Apache Beam) in Python"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    'apache-beam[gcp]',
+    'google-cloud-storage',
+]
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.urls]
+"Homepage" = "https://github.com/kilfu0701/dataflow-ext"
+"Bug Tracker" = "https://github.com/kilfu0701/dataflow-ext/issues"
