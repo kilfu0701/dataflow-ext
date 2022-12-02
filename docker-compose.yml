@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  dataflow_ext:
+    image: "dataflow_ext:dev"
+    container_name: "dataflow_ext"
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        DJANGO_ENV: dev
+    tty: true
+    privileged: true
+    init: true
+    volumes:
+      - .:/code
+    restart: always
