@@ -1,6 +1,6 @@
 [project]
 name = "dataflow-ext"
-version = "0.1.0"
+version = "0.1.1"
 authors = [
   { name="kilfu0701", email="kilfu0701@gmail.com" },
 ]
